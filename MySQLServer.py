@@ -14,8 +14,8 @@ try :
         mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store;")
         print(f"Database 'alx_book_store' created successfully!")
 
-except Error as e:
-        print(f"Error: {e}")
+except mysql.connector.Error:
+        print(mysql.connector.Error)
 
 finally:
      # Close the cursor if it exists
