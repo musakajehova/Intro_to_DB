@@ -18,7 +18,7 @@ CREATE TABLE Customers (
 );
 
 CREATE TABLE Books(
-    book_id INT Primary KEY,
+    book_id Primary KEY,
     title VARCHAR(130),
     author_id INT,
     FOREIGN KEY (author_id) REFERENCES Authors(author_id),
